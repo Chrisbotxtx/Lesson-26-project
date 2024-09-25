@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project lesson 26</title>
+</head>
+<body>
+    <h3>class in JS project</h3>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <script>
+        class student {
+            constructor(name) {
+                this.name = name;
+            }
+            static hello() {
+                return "Hello!"
+            }
+            static Hi(y) {
+                return "Welcome " + y.name;
+            }
+        }
+        st1 = new student("Chris")
+        document.getElementById("p1").innerHTML = st1.name;
+        document.getElementById("p2").innerHTML = student.hello();
+        document.getElementById("p3").innerHTML = student.Hi(st1);
+
+    </script>
+</body>
+</html>
